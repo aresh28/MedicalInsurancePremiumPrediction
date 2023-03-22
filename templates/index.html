@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Charges Predictor</title>
+</head>
+<body style="background-color: slategray;">
+    <h1>Medical Insurance Charges Predictor</h1>
+
+    <form action="/get_data", method="post">
+
+        <label>Age :</label> <input type="number" name="html_age"><br><br>
+        <label>Gender :</label>
+            <input type="radio" name="html_gender" value="male"> <label>Male</label>
+            <input type="radio" name="html_gender" value="female"> <label>Female</label><br><br>
+
+        <label>Bmi :</label> <input type="number" name="html_bmi"><br><br>
+        <label>Smoker</label>
+            <input type="radio" name="html_smoker" value="yes"> <label>Yes</label>
+            <input type="radio" name="html_smoker" value="no"> <label>No</label><br><br>
+
+        <label>Region :</label>
+        <select name="html_region">
+            <option value="Southeast">Southeast</option>
+            <option value="Southwest">Southwest</option>
+            <option value="Northeast">Northeast</option>
+            <option value="Northwest">Northwest</option>
+        </select><br><br>
+
+        <input type="submit" value="Charges Prediction">
+
+
+
+
+
+
+
+    </form><br><br>
+
+    <label>Premium Charges are : </label>{{prediction}}
+    
+</body>
+</html>

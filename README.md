@@ -1,1 +1,1 @@
-## End to end macghin learnging project
+## End to end machin learnging project
